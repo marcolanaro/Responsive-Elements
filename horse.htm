@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Horse</title>
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Gilda+Display);
+            @media all and (max-width: 600px) {
+                div.avatar {max-width: 100px;}
+                div.datas {margin-left: 100px;}
+                div.time {font-size: 80%;}
+                div.name {font-size: 140%;}
+                div.message {font-size: 90%; margin-top: 20px;}
+            }
+            @media all and (max-width: 900px) and (min-width: 600px) {
+                div.avatar {max-width: 150px;}
+                div.datas {margin-left: 150px;}
+                div.time {font-size: 90%;}
+                div.name {font-size: 150%;}
+                div.message {font-size: 100%; margin-top: 30px;}
+            }
+            @media all and (max-width: 1100px) and (min-width: 900px) {
+                div.avatar {max-width: 200px;}
+                div.datas {margin-left: 200px;}
+                div.time {font-size: 100%;}
+                div.name {font-size: 160%;}
+                div.message {font-size: 110%; margin-top: 40px;}
+            }
+            @media all and (min-width: 1100px) {
+                div.avatar {max-width: 250px;}
+                div.datas {margin-left: 250px;}
+                div.time {font-size: 110%;}
+                div.name {font-size: 170%;}
+                div.message {font-size: 120%; margin-top: 50px;}
+            }
+            html {
+                color: #000;
+                font-family: 'Gilda Display', serif;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            img {
+                max-width: 100%;
+            }
+            span.at {color: #88A;}
+            .mylist {
+                border-style: solid none none none;
+                border-width: 1px;
+                border-color: #CCC;
+            }
+            .wrapper {
+                border-style: none none solid none;
+                border-width: 1px;
+                border-color: #CCC;
+                background-image: linear-gradient(to top, #EEEEEE 0%, #FFFFFF 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EEEEEE',GradientType=0 );
+            }
+            .wrapper:after {
+                content: " ";
+                display: block;
+                height: 0px;
+                clear: both;
+            }
+            .details:after { 
+                content: " ";
+                display: inline-block;
+                height: 0px;
+                clear: both;
+            }
+            .avatar {float: left;}
+            .name {
+                float: left;
+                font-weight:bold;
+            }
+            .time {
+                float: right;
+                color: #CCC;
+            }
+            .datas {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="mylist">
+            <li class="wrapper">
+                <div class="avatar"><img src="./horsejs.png"></div>
+                <div class="datas">
+                    <div class="details">
+                        <div class="name">horse_js</div>
+                        <div class="time">7 days</div>
+                    </div>
+                    <div class="message">as much as I want to be, I'm not <span class="at">@horse_js</span></div>
+                </div>
+            </li>
+            <li class="wrapper">
+                <div class="avatar"><img src="./horsejs.png"></div>
+                <div class="datas">
+                    <div class="details">
+                        <div class="name">horse_js</div>
+                        <div class="time">7 days</div>
+                    </div>
+                    <div class="message">as much as I want to be, I'm not <span class="at">@horse_js</span></div>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
